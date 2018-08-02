@@ -1,10 +1,10 @@
 /**********************************************************************
-* © 2005 Microchip Technology Inc.
+* Â© 2005 Microchip Technology Inc.
 *
 * FileName:        uart1Drv.c
 * Dependencies:    Header (.h) files if applicable, see below
 * Processor:       dsPIC33Fxxxx/PIC24Hxxxx
-* Compiler:        MPLAB® C30 v3.00 or higher
+* Compiler:        MPLABÂ® C30 v3.00 or higher
 * Tested On:	   dsPIC33FJ256GP710
 *
 * SOFTWARE LICENSE AGREEMENT:
@@ -151,7 +151,7 @@ void cfgDma1UartRx(void)
 	//  Configure DMA Channel 1 to:
 	//  Transfer data from UART to RAM Continuously
 	//  Register Indirect with Post-Increment
-	//  Using two ‘ping-pong’ buffers
+	//  Using two â€˜ping-pongâ€™ buffers
 	//  8 transfers per buffer
 	//  Transfer words
 	//********************************************************************************/
@@ -164,7 +164,7 @@ void cfgDma1UartRx(void)
 
 	//********************************************************************************
 	//  STEP 6:
-	//  Associate two buffers with Channel 1 for ‘Ping-Pong’ operation
+	//  Associate two buffers with Channel 1 for â€˜Ping-Pongâ€™ operation
 	//********************************************************************************/
     DMA1STAL = ( uint16_t ) ( &BufferB );
 
